@@ -1,0 +1,21 @@
+{
+  "name": "auction-ethereum-backend",
+  "version": "1.0.0",
+  "description": "Smart contracts for Auction Ethereum project",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx hardhat test",
+    "compile": "npx hardhat compile",
+    "deploy": "npx hardhat run scripts/deploy.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "hardhat": "^2.19.0",
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}

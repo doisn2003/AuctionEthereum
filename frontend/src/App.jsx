@@ -1,35 +1,36 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Button from './components/Button';
 
 function App() {
-  const [count, setCount] = useState(0)
+  // Logic: Hàm xử lý sự kiện
+  const handleLogin = () => {
+    alert("Bạn đã nhấn nút Login!");
+  };
 
+  const handleRegister = () => {
+    alert("Đang chuyển trang đăng ký...");
+  };
+
+  // View
   return (
+    // React Fragment (<>...</>): React bắt buộc chỉ trả về 1 thẻ cha duy nhất.
+    // Dùng cái này để gom nhóm mà không sinh ra thẻ div thừa trong HTML.
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Header />
+      
+      <main style={{ padding: '20px', textAlign: 'center' }}>
+        <h3>Chào mừng đến với React</h3>
+        <p>Thử tương tác với các component Button phía dưới:</p>
+        
+        {/* Tái sử dụng Component Button với các props khác nhau */}
+        <Button label="Đăng nhập" onClick={handleLogin} />
+        <Button label="Đăng ký" onClick={handleRegister} />
+      </main>
+
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

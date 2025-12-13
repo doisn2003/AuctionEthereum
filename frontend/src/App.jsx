@@ -9,7 +9,7 @@ function App() {
   };
 
   const handleRegister = () => {
-    alert("Đang chuyển trang đăng ký...");
+    console.log("Đang chuyển trang đăng ký...");
   };
 
   // View

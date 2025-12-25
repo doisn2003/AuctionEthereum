@@ -14,9 +14,9 @@ const AuctionCard = ({ item, onBid }) => {
 
         <div className={`card-status-badge ${item.isHot ? 'status-hot' : 'status-timer'}`}>
           <span className="material-symbols-outlined" style={{ fontSize: '14px' }}>
-            {item.isHot ? 'local_fire_department' : 'timer'}
+            {item.isHot ? 'hourglass_top' : 'timer'}
           </span>
-          {item.isHot ? 'Đang Hot' : item.endTime}
+          {item.isHot ? 'Đang Diễn ra' : item.endTime}
         </div>
       </div>
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Navbar = () => {
+const Navbar = ({ account, connectWallet }) => {
   return (
     <header className="navbar">
       <div className="container navbar-inner">
@@ -44,8 +44,15 @@ const Navbar = () => {
               placeholder="Tìm kiếm vật phẩm..."
             />
           </div>
-          <button className="btn-primary">Đăng nhập ví Web3</button>
-          <button className="btn-secondary">Đăng ký ví Web3</button>
+          {account ? (
+            <button className="btn-primary" style={{ backgroundColor: '#10b981', cursor: 'default' }}>
+              {account.slice(0, 6)}...{account.slice(-4)}
+            </button>
+          ) : (
+            <button className="btn-primary" onClick={connectWallet}>
+              Đăng nhập ví Web3
+            </button>
+          )}
         </div>
       </div>
     </header>

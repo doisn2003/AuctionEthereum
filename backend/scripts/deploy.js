@@ -1,4 +1,6 @@
 const hre = require("hardhat");
+const fs = require("fs");
+const path = require("path");
 
 async function main() {
     const [deployer] = await hre.ethers.getSigners();
@@ -13,6 +15,17 @@ async function main() {
 
     console.log("AuctionHouse deployed to:", auctionHouseAddress);
 
+    // Save address to frontend .env
+    const envPath = path.join(__dirname, "../../frontend/.env");
+    const envContent = `VITE_CONTRACT_ADDRESS=${auctionHouseAddress}\n`;
+
+    try {
+        fs.writeFileSync(envPath, envContent);
+        console.log(`Saved contract address to ${envPath}`);
+    } catch (err) {
+        console.error("Error writing to .env file:", err);
+    }
+
     const phoneNumbers = [
         "0909090909", "0345678910", "0900000001", "0989999999"
     ];
@@ -21,7 +34,7 @@ async function main() {
     ];
 
     const allItems = [...phoneNumbers, ...licensePlates];
-    const duration = 3600; // 1 hour
+    const duration = 300; // đơn vị giây
 
     console.log("Creating auctions for 8 items...");
 

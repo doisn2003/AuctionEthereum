@@ -10,14 +10,14 @@
   --border-color: #e7ebf3;
   --red-hot: #dc2626;
   --overlay-dark: rgba(16, 22, 34, 0.8);
-  
+
   /* Spacing */
   --container-width: 1440px;
   --spacing-sm: 0.5rem;
   --spacing-md: 1rem;
   --spacing-lg: 1.5rem;
   --spacing-xl: 2rem;
-  
+
   /* Border Radius */
   --radius-md: 0.5rem;
   --radius-lg: 0.75rem;
@@ -219,7 +219,7 @@ button {
   padding: 3rem;
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(180deg, rgba(19, 91, 236, 0.1) 0%, rgba(16, 22, 34, 0.8) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDMmZoNW_O8doF0BAPk2jatpF_U8683nuVt-eNxvvXPAEnmtpfOCsHFbjMD-HAHz-PtwBrgZrXakeW0IGPuLbtwBxyXkjA0zGiA3LPeBg0j70rn4cxgBc2n14NB4inX4wUGxfuNJoikVZnrCPtfYkI2WL8aNjsGdgjRfA3JPH5Hz98cqm-8sOTz4tlsva2_3dxEqq4ISEpJGau4nmt-_T5p-_68ZyqjcCkySUcaIegjjBeqGRnEBEa6ini0JJEun-ytyPDaKHQ3G9Df");
+  background-image: linear-gradient(180deg, rgba(19, 91, 236, 0.1) 0%, rgba(16, 22, 34, 0.8) 100%), url("/image/Porsche.png");
 }
 
 .hero-content {
@@ -229,6 +229,8 @@ button {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  align-self: flex-end;
+  text-align: right;
 }
 
 .live-badge {
@@ -241,6 +243,7 @@ button {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--radius-full);
   width: fit-content;
+  transform: translateX(255px);
 }
 
 .pulse-dot {
@@ -281,7 +284,7 @@ button {
   font-size: 2.5rem;
   font-weight: 900;
   line-height: 1.1;
-  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero-desc {
@@ -294,6 +297,7 @@ button {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  transform: translateX(250px);
 }
 
 .btn-hero-primary {
@@ -468,11 +472,13 @@ button {
   gap: 0.75rem;
   overflow-x: auto;
   padding-bottom: 0.5rem;
-  scrollbar-width: none; /* Firefox */
+  scrollbar-width: none;
+  /* Firefox */
 }
 
 .chips-container::-webkit-scrollbar {
-  display: none; /* Chrome/Safari */
+  display: none;
+  /* Chrome/Safari */
 }
 
 .chip {
@@ -542,7 +548,8 @@ button {
 
 .auction-card {
   background-color: var(--bg-white);
-  border: 1px solid var(--bg-light); /* Initially barely visible */
+  border: 1px solid var(--bg-light);
+  /* Initially barely visible */
   border-radius: var(--radius-lg);
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -713,7 +720,7 @@ button {
 }
 
 .btn-load-more:hover {
-  background-color: rgba(0,0,0,0.02);
+  background-color: rgba(0, 0, 0, 0.02);
 }
 
 /* Footer */
@@ -831,7 +838,9 @@ button {
 
 /* Animations */
 @keyframes ping {
-  75%, 100% {
+
+  75%,
+  100% {
     transform: scale(2);
     opacity: 0;
   }
@@ -843,7 +852,7 @@ button {
     flex-direction: row;
     align-items: center;
   }
-  
+
   .auction-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -851,26 +860,26 @@ button {
   .nav-links {
     display: none;
   }
-  
+
   .btn-secondary {
     display: block;
   }
-  
+
   .footer-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .footer-bottom {
     flex-direction: row;
     justify-content: space-between;
   }
-  
+
   .filter-content {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
   }
-  
+
   .filter-search {
     width: 300px;
   }
@@ -880,15 +889,15 @@ button {
   .search-bar {
     display: block;
   }
-  
+
   .hero-title {
     font-size: 3.75rem;
   }
-  
+
   .deal-divider {
     display: block;
   }
-  
+
   .deal-price-block {
     align-items: flex-end;
   }
@@ -899,11 +908,11 @@ button {
     display: flex;
     gap: 1.5rem;
   }
-  
+
   .auction-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-  
+
   .footer-grid {
     grid-template-columns: repeat(4, 1fr);
   }

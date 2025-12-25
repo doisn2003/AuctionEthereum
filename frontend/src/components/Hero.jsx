@@ -12,21 +12,22 @@ const Hero = () => {
               <span className="pulse-ping"></span>
               <span className="pulse-solid"></span>
             </span>
-            <span className="live-text">Live Auction</span>
+            <span className="live-text">Đang hot</span>
           </div>
           
           <div>
             <h1 className="hero-title">
-              Summer Luxury <br /> Watch Collection
+              Cục Đăng Kiểm <br /> Việt Nam
             </h1>
             <p className="hero-desc">
-              Discover rare vintage timepieces and modern classics. Bidding closes soon on exclusive lots from Patek Philippe, Rolex, and Omega.
+              Biển số xe quận Hoàn Kiếm: 29A-999.99 <br/>
+              Ngũ Cửu mang ý nghĩa may mắn, tài lộc, phát đạt và thịnh vượng
             </p>
           </div>
           
           <div className="hero-actions">
-            <button className="btn-hero-primary">Start Bidding</button>
-            <button className="btn-hero-secondary">View Catalog</button>
+            <button className="btn-hero-primary">Đấu Giá</button>
+            <button className="btn-hero-secondary">Xem Chi Tiết</button>
           </div>
         </div>
       </div>

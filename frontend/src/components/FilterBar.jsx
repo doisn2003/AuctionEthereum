@@ -7,23 +7,15 @@ const FilterBar = () => {
         <div className="chips-container">
           <button className="chip active">
             <span className="material-symbols-outlined">visibility</span>
-            <span>All</span>
-          </button>
-          <button className="chip">
-            <span className="material-symbols-outlined">palette</span>
-            <span>Art</span>
+            <span>Tất cả</span>
           </button>
           <button className="chip">
             <span className="material-symbols-outlined">directions_car</span>
-            <span>Vehicles</span>
-          </button>
-          <button className="chip">
-            <span className="material-symbols-outlined">diamond</span>
-            <span>Jewelry</span>
+            <span>Biển số xe</span>
           </button>
           <button className="chip">
             <span className="material-symbols-outlined">devices</span>
-            <span>Electronics</span>
+            <span>Số điện thoại</span>
           </button>
         </div>
         
@@ -31,7 +23,7 @@ const FilterBar = () => {
             <div className="search-icon">
                 <span className="material-symbols-outlined">filter_list</span>
             </div>
-          <input className="filter-input" placeholder="Filter by lot number or keyword..." />
+          <input className="filter-input" placeholder="Tìm kiếm..." />
         </div>
       </div>
     </div>

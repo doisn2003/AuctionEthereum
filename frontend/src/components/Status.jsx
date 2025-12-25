@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const DealDay = () => {
+const Status = () => {
   const [time, setTime] = useState({
     hours: 3,
     mins: 36,
@@ -85,4 +85,4 @@ const DealDay = () => {
   );
 };
 
-export default DealDay;
+export default Status;

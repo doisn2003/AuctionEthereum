@@ -1,7 +1,7 @@
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
-import Dealday from './components/DealDay';
+import Status from './components/Status';
 import FilterBar from './components/FilterBar';
 import AuctionGrid from './components/AuctionGrid';
 
@@ -22,7 +22,7 @@ function App() {
     <>
       <Navbar />
       <Hero />
-      <Dealday />
+      <Status />
       <FilterBar />
       <AuctionGrid />
       <Footer />

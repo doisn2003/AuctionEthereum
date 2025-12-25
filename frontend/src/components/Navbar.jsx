@@ -26,7 +26,7 @@ const Navbar = ({ account, connectWallet }) => {
 
           <nav className="nav-links">
             <a href="#" className="nav-link">Đấu giá</a>
-            <a href="#" className="nav-link">Đăng ký vật phẩm</a>
+            <a href="#" className="nav-link">Liên hệ bàn giao</a>
             <a href="#" className="nav-link">Về chúng tôi</a>
             <a href="#" className="nav-link">Cộng đồng</a>
             <a href="#" className="nav-link">Hỗ trợ</a>
